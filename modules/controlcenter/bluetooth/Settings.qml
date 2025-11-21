@@ -332,7 +332,7 @@ ColumnLayout {
 
                         anchors.left: parent.left
 
-                        text: qsTr("Rename adapter (currently does not work)")  // FIXME: remove disclaimer when fixed
+                        text: qsTr("Rename adapter (limited by QuickShell Bluetooth API)")  // FIXME: Adapter renaming not yet supported by QuickShell Bluetooth backend
                         color: Colours.palette.m3outline
                         font.pointSize: Appearance.font.size.small
                     }

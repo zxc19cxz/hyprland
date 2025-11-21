@@ -43,8 +43,14 @@ Singleton {
 
     function setVolume(newVolume: real): void {
         if (sink?.ready && sink?.audio) {
+            if (newVolume < 0 || newVolume > 1) {
+                console.warn("Audio volume out of bounds:", newVolume, "clamping to [0,1]");
+                newVolume = Math.max(0, Math.min(1, newVolume));
+            }
             sink.audio.muted = false;
             sink.audio.volume = Math.max(0, Math.min(Config.services.maxVolume, newVolume));
+        } else {
+            console.warn("Cannot set volume: audio sink not ready");
         }
     }
 
