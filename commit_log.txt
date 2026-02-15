@@ -1,0 +1,6 @@
+Commit Log
+==========
+
+This file tracks all automated commits made by the demo workflow.
+
+Format: TIMESTAMP - COMMIT MESSAGE

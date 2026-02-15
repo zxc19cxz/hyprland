@@ -1,0 +1,143 @@
+name: Demo
+
+# ✅ Allow workflow to push changes
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # Run once every hour
+  workflow_dispatch:
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set Git Config
+        run: |
+          git config --global user.name "Boldchingis"
+          git config --global user.email "bboldchingis@gmail.com"
+
+      - name: Decide if commit should run
+        id: should_commit
+        run: |
+          DAY=$(date +%u)   # 1=Mon, 7=Sun
+          HOUR=$(date +%H)
+
+          # Weekend logic
+          if [ $DAY -ge 6 ]; then
+            if [ $((RANDOM % 10)) -gt 1 ]; then
+              echo "Weekend — skipping commits"
+              echo "should_commit=false" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          # Work hours logic
+          elif [ $HOUR -ge 9 ] && [ $HOUR -lt 18 ]; then
+            if [ $((RANDOM % 10)) -lt 4 ]; then
+              echo "Work hours — randomly skipping"
+              echo "should_commit=false" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          else
+            # Off-hours logic
+            if [ $((RANDOM % 10)) -lt 8 ]; then
+              echo "Off-hours — skipping"
+              echo "should_commit=false" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          fi
+
+          # Determine number of commits: weighted random
+          RAND=$((RANDOM % 100))
+          if [ $RAND -lt 40 ]; then
+            COUNT=1
+          elif [ $RAND -lt 70 ]; then
+            COUNT=2
+          elif [ $RAND -lt 90 ]; then
+            COUNT=3
+          else
+            COUNT=4
+          fi
+
+          echo "Committing $COUNT times this hour"
+          echo "commit_count=$COUNT" >> $GITHUB_OUTPUT
+          echo "should_commit=true" >> $GITHUB_OUTPUT
+
+      - name: Make commits
+        if: steps.should_commit.outputs.should_commit == 'true'
+        run: |
+          # Create required folders/files (avoid "No such file" errors)
+          mkdir -p data docs src src/utils
+          touch data/changes.csv docs/CHANGELOG.md src/utils/helpers.js src/utils/logger.js src/index.html commit_log.txt
+
+          for ((i=1; i<=${{ steps.should_commit.outputs.commit_count }}; i++))
+          do
+            FEATURES=("user authentication" "API endpoints" "UI components" "database schema" "error handling" "form validation" "responsive design" "caching layer" "API documentation" "test coverage")
+            FIXES=("bug" "typo" "performance issue" "memory leak" "race condition" "UI glitch" "broken link" "security vulnerability" "build error" "test failure")
+            IMPROVEMENTS=("refactor" "optimize" "clean up" "reorganize" "update dependencies" "improve error messages" "enhance performance" "add logging" "update docs" "improve tests")
+
+            CHANGE_TYPE=$((RANDOM % 10))
+            if [ $CHANGE_TYPE -lt 4 ]; then
+              MSG_TYPE="feat"
+              MSG="add ${FEATURES[$RANDOM % ${#FEATURES[@]}]}"
+            elif [ $CHANGE_TYPE -lt 8 ]; then
+              MSG_TYPE="fix"
+              MSG="fix ${FIXES[$RANDOM % ${#FIXES[@]}]}"
+            else
+              MSG_TYPE="chore"
+              MSG="${IMPROVEMENTS[$RANDOM % ${#IMPROVEMENTS[@]}]}"
+            fi
+
+            DETAILS=("" "" "" "" "" "" "" "" "" "" "" "" "" "naming convention" "code style" "for better performance" "to improve UX" "to fix edge case")
+            DETAIL="${DETAILS[$RANDOM % ${#DETAILS[@]}]}"
+
+            COMMIT_MSG="$MSG_TYPE: $MSG"
+            [ -n "$DETAIL" ] && COMMIT_MSG="$COMMIT_MSG $DETAIL"
+
+            TIMESTAMP=$(TZ='Asia/Ulaanbaatar' date '+%Y-%m-%d %H:%M:%S %Z')
+
+            FILE=$((RANDOM % 5))
+            case $FILE in
+              0) echo "$TIMESTAMP - $COMMIT_MSG" >> commit_log.txt ;;
+              1) echo "// $TIMESTAMP - $COMMIT_MSG" >> src/utils/helpers.js ;;
+              2) echo "# $TIMESTAMP - $COMMIT_MSG" >> docs/CHANGELOG.md ;;
+              3) echo "<!-- $TIMESTAMP - $COMMIT_MSG -->" >> src/index.html ;;
+              *) echo "$TIMESTAMP,$MSG_TYPE,$MSG" >> data/changes.csv ;;
+            esac
+
+            # 20% chance to modify another file
+            if [ $((RANDOM % 5)) -eq 0 ]; then
+              echo "$TIMESTAMP - related update" >> src/utils/logger.js
+              git add src/utils/logger.js
+              COMMIT_MSG="$COMMIT_MSG and update related files"
+            fi
+
+            git add .
+            git commit -m "$COMMIT_MSG"
+
+            # Sleep strategy between commits (within workflow run)
+            RAND_SLEEP=$((RANDOM % 100))
+            if [ $RAND_SLEEP -lt 60 ]; then
+              SLEEP=$((5 + RANDOM % 25))
+            elif [ $RAND_SLEEP -lt 90 ]; then
+              SLEEP=$((30 + RANDOM % 30))
+            else
+              SLEEP=$((60 + RANDOM % 60))
+            fi
+
+            if [ $i -lt ${{ steps.should_commit.outputs.commit_count }} ]; then
+              echo "Sleeping $SLEEP minutes..."
+              sleep $((SLEEP * 60))
+            fi
+          done
+
+      - name: Push Changes
+        if: steps.should_commit.outputs.should_commit == 'true'
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git HEAD:main
