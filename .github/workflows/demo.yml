@@ -19,7 +19,7 @@ jobs:
 
       - name: Set Git Config
         run: |
-          git config --global user.name "Boldchingis"
+          git config --global user.name "zxc19cxz"
           git config --global user.email "bboldchingis@gmail.com"
 
       - name: Decide if commit should run
