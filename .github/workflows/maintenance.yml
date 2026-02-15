@@ -1,0 +1,52 @@
+name: Repository Maintenance
+
+# This workflow performs legitimate repository maintenance by generating health reports.
+# It only commits when there are actual file changes, preventing fake activity.
+# Uses default GITHUB_TOKEN which doesn't trigger recursive workflow runs on own commits.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"  # Every 10 minutes
+  workflow_dispatch:  # Allow manual triggering
+
+permissions:
+  contents: write  # Required for git push
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history needed for clean git operations
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use default token, prevents recursive triggers
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Generate health report
+        run: |
+          python scripts/automation/health_report.py
+      
+      - name: Commit and push changes
+        run: |
+          # Configure git author as official GitHub Actions bot
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Stage all changes (including deletions)
+          git add -u
+          
+          # Only commit if there are actual changes
+          git diff --quiet --exit-code . || git commit -m "chore: refresh health report [automated]"
+          
+          # Push to main branch, ignore errors if no changes
+          git push origin main || echo "No changes or push not needed"
