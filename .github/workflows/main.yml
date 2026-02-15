@@ -28,10 +28,10 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "chore(reports): update weekly report"
-          title: "chore(reports): update weekly report"
-          body: "Automated weekly report refresh."
-          branch: "automation/weekly-report"
+          commit-message: "chore(reports): update weekly report - run ${{ github.run_number }}"
+          title: "chore(reports): update weekly report - run ${{ github.run_number }}"
+          body: "Automated weekly report refresh for run #${{ github.run_number }}."
+          branch: "automation/weekly-report-${{ github.run_number }}-$(date +%Y%m%d%H%M%S)"
           delete-branch: true
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
