@@ -24,6 +24,10 @@ jobs:
       - name: Generate report
         run: python scripts/automation/generate_weekly_report.py
 
+      - name: Generate unique branch name
+        id: branch-name
+        run: echo "branch=automation/weekly-report-${{ github.run_number }}-$(date +%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
+
       - name: Create pull request (if changed)
         uses: peter-evans/create-pull-request@v7
         with:
@@ -31,7 +35,7 @@ jobs:
           commit-message: "chore(reports): update weekly report - run ${{ github.run_number }}"
           title: "chore(reports): update weekly report - run ${{ github.run_number }}"
           body: "Automated weekly report refresh for run #${{ github.run_number }}."
-          branch: "automation/weekly-report-${{ github.run_number }}-$(date +%Y%m%d%H%M%S)"
+          branch: ${{ steps.branch-name.outputs.branch }}
           delete-branch: true
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
