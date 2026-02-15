@@ -32,7 +32,12 @@ def _git_info(now_utc: _dt.datetime) -> GitInfo:
     head_summary = _try_run(["git", "show", "-s", "--format=%s", "HEAD"], default="")
     latest_tag = _try_run(["git", "describe", "--tags", "--abbrev=0"], default="")
 
-    since = (now_utc - _dt.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    since_dt = _dt.datetime.combine(
+        (now_utc.date() - _dt.timedelta(days=7)),
+        _dt.time(0, 0, 0),
+        tzinfo=_dt.timezone.utc,
+    )
+    since = since_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     commit_count_raw = _try_run(["git", "rev-list", "--count", f"--since={since}", "HEAD"], default="0")
     try:
         commit_count_7d = int(commit_count_raw)
@@ -67,7 +72,7 @@ def _count_by_extension(root: Path) -> dict[str, int]:
 
 
 def _render_report(now_utc: _dt.datetime, git: GitInfo, counts: dict[str, int]) -> str:
-    now_str = now_utc.strftime("%Y-%m-%d %H:%M:%SZ")
+    now_str = now_utc.strftime("%Y-%m-%d")
 
     lines: list[str] = []
     lines.append("# Weekly repo report")
