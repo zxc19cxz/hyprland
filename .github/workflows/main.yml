@@ -1,4 +1,4 @@
-name: Weekly report PR
+name: Main shit
 
 on:
   workflow_dispatch:
