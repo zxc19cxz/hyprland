@@ -9,3 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-16 20:28:02 +08 - feat: add error handling
 # 2026-02-17 22:58:45 +08 - fix: fix build error
 # 2026-02-18 15:50:12 +08 - chore: refactor
+# 2026-02-18 17:49:33 +08 - fix: fix build error for better performance
