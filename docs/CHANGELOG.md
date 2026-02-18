@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-18 15:50:12 +08 - chore: refactor
 # 2026-02-18 17:49:33 +08 - fix: fix build error for better performance
 # 2026-02-19 05:34:47 +08 - feat: add test coverage
+# 2026-02-19 05:44:47 +08 - fix: fix broken link code style
