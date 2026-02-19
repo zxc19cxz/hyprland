@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-19 05:44:47 +08 - fix: fix broken link code style
 # 2026-02-19 17:46:44 +08 - chore: update dependencies to fix edge case
 # 2026-02-19 18:40:44 +08 - fix: fix security vulnerability
+# 2026-02-20 06:07:07 +08 - feat: add API endpoints
