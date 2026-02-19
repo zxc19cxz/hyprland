@@ -29,3 +29,4 @@ module.exports = {
 // 2026-02-18 21:05:34 +08 - fix: fix race condition
 // 2026-02-19 12:52:27 +08 - chore: reorganize
 // 2026-02-19 13:07:27 +08 - feat: add API documentation
+// 2026-02-19 13:58:55 +08 - fix: fix typo
