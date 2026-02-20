@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-15`
+Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `224ca51ba2bb1a2dc525437826b29e200d4c6435`
-- HEAD summary: chore(reports): update weekly report - run 24 (#16)
+- HEAD: `819b4f4cc4833c19b58e860a13db71909a3a0c00`
+- HEAD summary: feat: add test coverage to fix edge case and update related files
 - Commits in last 7 days: `1`
 
 ## File counts by extension
