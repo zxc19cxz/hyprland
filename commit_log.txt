@@ -11,3 +11,4 @@ Format: TIMESTAMP - COMMIT MESSAGE
 2026-02-18 21:56:34 +08 - fix: fix UI glitch
 2026-02-19 23:05:43 +08 - feat: add database schema
 2026-02-20 14:14:52 +08 - fix: fix security vulnerability naming convention
+2026-02-20 14:23:52 +08 - feat: add user authentication
