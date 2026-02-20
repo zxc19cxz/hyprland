@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-15`
+Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `224ca51ba2bb1a2dc525437826b29e200d4c6435`
-- HEAD summary: chore(reports): update weekly report - run 24 (#16)
+- HEAD: `24a65087fc03cde736cb78c7b47596ab57a63134`
+- HEAD summary: chore: update dependencies and update related files
 - Commits in last 7 days: `1`
 
 ## File counts by extension
