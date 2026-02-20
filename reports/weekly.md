@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-15`
+Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `224ca51ba2bb1a2dc525437826b29e200d4c6435`
-- HEAD summary: chore(reports): update weekly report - run 24 (#16)
+- HEAD: `9d0efe869d22b20ba24c5f3fdc8da3d0a235a952`
+- HEAD summary: feat: add responsive design
 - Commits in last 7 days: `1`
 
 ## File counts by extension
