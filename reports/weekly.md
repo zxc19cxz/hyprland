@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-15`
+Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `224ca51ba2bb1a2dc525437826b29e200d4c6435`
-- HEAD summary: chore(reports): update weekly report - run 24 (#16)
+- HEAD: `0ef999811b2f1f83b53df3c0d07de8a7188a380e`
+- HEAD summary: feat: add user authentication
 - Commits in last 7 days: `1`
 
 ## File counts by extension
