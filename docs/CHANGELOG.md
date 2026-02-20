@@ -18,3 +18,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-20 15:43:39 +08 - chore: update dependencies
 # 2026-02-20 18:37:59 +08 - chore: clean up
 # 2026-02-20 18:55:59 +08 - feat: add API endpoints for better performance
+# 2026-02-21 07:29:05 +08 - feat: add responsive design
