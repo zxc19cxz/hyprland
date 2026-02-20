@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-15`
+Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `224ca51ba2bb1a2dc525437826b29e200d4c6435`
-- HEAD summary: chore(reports): update weekly report - run 24 (#16)
+- HEAD: `54ce20ebc0e1d463ff172edce83e13099027b632`
+- HEAD summary: feat: add API endpoints
 - Commits in last 7 days: `1`
 
 ## File counts by extension
