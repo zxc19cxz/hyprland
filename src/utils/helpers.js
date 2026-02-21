@@ -34,3 +34,4 @@ module.exports = {
 // 2026-02-19 21:06:43 +08 - fix: fix typo for better performance
 // 2026-02-19 22:47:43 +08 - fix: fix broken link code style
 // 2026-02-21 00:39:35 +08 - fix: fix bug
+// 2026-02-21 22:26:39 +08 - fix: fix UI glitch
