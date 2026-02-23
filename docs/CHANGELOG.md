@@ -23,3 +23,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-22 08:06:02 +08 - chore: refactor to improve UX
 # 2026-02-23 05:25:07 +08 - fix: fix build error
 # 2026-02-23 23:15:08 +08 - feat: add database schema
+# 2026-02-24 00:57:53 +08 - feat: add error handling
