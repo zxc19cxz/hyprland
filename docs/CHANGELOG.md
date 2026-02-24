@@ -25,3 +25,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-23 23:15:08 +08 - feat: add database schema
 # 2026-02-24 00:57:53 +08 - feat: add error handling
 # 2026-02-24 01:02:53 +08 - feat: add database schema
+# 2026-02-24 15:49:05 +08 - feat: add API endpoints
