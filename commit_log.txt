@@ -23,3 +23,4 @@ Format: TIMESTAMP - COMMIT MESSAGE
 2026-02-23 21:45:40 +08 - chore: update dependencies
 2026-02-24 15:12:05 +08 - chore: improve error messages
 2026-02-24 16:50:34 +08 - fix: fix typo to improve UX
+2026-02-24 18:39:21 +08 - fix: fix performance issue
