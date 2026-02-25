@@ -28,3 +28,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-24 15:49:05 +08 - feat: add API endpoints
 # 2026-02-24 21:25:55 +08 - chore: add logging for better performance
 # 2026-02-26 07:28:38 +08 - chore: add logging to fix edge case
+# 2026-02-26 07:59:38 +08 - feat: add error handling
