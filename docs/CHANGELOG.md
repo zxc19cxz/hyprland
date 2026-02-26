@@ -30,3 +30,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-26 07:28:38 +08 - chore: add logging to fix edge case
 # 2026-02-26 07:59:38 +08 - feat: add error handling
 # 2026-02-26 23:53:44 +08 - feat: add error handling
+# 2026-02-27 01:16:44 +08 - fix: fix build error
