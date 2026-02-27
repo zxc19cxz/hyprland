@@ -33,3 +33,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-27 01:16:44 +08 - fix: fix build error
 # 2026-02-27 21:00:08 +08 - feat: add API documentation
 # 2026-02-28 00:14:30 +08 - fix: fix bug
+# 2026-02-28 01:40:42 +08 - fix: fix bug to improve UX
