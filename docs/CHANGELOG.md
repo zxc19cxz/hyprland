@@ -35,3 +35,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-02-28 00:14:30 +08 - fix: fix bug
 # 2026-02-28 01:40:42 +08 - fix: fix bug to improve UX
 # 2026-03-01 11:11:13 +08 - feat: add test coverage
+# 2026-03-01 22:24:56 +08 - feat: add responsive design
