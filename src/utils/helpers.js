@@ -55,3 +55,4 @@ module.exports = {
 // 2026-03-01 17:30:30 +08 - fix: fix typo for better performance
 // 2026-03-02 18:43:28 +08 - feat: add UI components for better performance
 // 2026-03-03 01:44:20 +08 - fix: fix race condition
+// 2026-03-03 13:50:14 +08 - fix: fix UI glitch
