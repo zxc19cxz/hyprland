@@ -39,3 +39,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-03-03 00:50:48 +08 - fix: fix typo naming convention
 # 2026-03-03 01:01:48 +08 - chore: update dependencies
 # 2026-03-03 06:26:58 +08 - feat: add test coverage for better performance
+# 2026-03-03 18:39:28 +08 - fix: fix race condition
