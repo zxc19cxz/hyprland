@@ -4,8 +4,8 @@ Generated: `2026-02-27`
 
 ## Git
 
-- HEAD: `eecf4face8b9821cb169dd6dd705192c7f8872b4`
-- HEAD summary: fix: fix broken link to fix edge case
+- HEAD: `afe72b00b00c7b70db6b9d49caad925bb444edf5`
+- HEAD summary: chore: update docs
 - Commits in last 7 days: `1`
 
 ## File counts by extension
