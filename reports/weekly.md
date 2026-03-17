@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-28`
+Generated: `2026-03-01`
 
 ## Git
 
-- HEAD: `b036a7c8bc36f066d1826c136af423f149f32221`
-- HEAD summary: fix: fix build error
+- HEAD: `ea1aeda17ba988e8b6cdce503c79a6a1798e1672`
+- HEAD summary: feat: add test coverage
 - Commits in last 7 days: `1`
 
 ## File counts by extension
