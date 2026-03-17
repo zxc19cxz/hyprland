@@ -4,8 +4,8 @@ Generated: `2026-02-27`
 
 ## Git
 
-- HEAD: `6490e717a252d6c0140d9b2951909adbf1030808`
-- HEAD summary: chore: refactor
+- HEAD: `eecf4face8b9821cb169dd6dd705192c7f8872b4`
+- HEAD summary: fix: fix broken link to fix edge case
 - Commits in last 7 days: `1`
 
 ## File counts by extension
