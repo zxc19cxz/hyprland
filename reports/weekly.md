@@ -4,8 +4,8 @@ Generated: `2026-02-21`
 
 ## Git
 
-- HEAD: `b324ef9e68863200ca5bfe1ff89b41a5220247cf`
-- HEAD summary: chore(reports): update weekly report - run 12 (#4)
+- HEAD: `de0ec76df990a2cb93670c599c106de0934049d6`
+- HEAD summary: fix: fix race condition
 - Commits in last 7 days: `1`
 
 ## File counts by extension
