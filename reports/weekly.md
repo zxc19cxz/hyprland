@@ -4,8 +4,8 @@ Generated: `2026-02-26`
 
 ## Git
 
-- HEAD: `fa6f2adb2ae422b9e00c49ec0a3ef68fec7a57df`
-- HEAD summary: fix: fix broken link
+- HEAD: `c7b96414e381effaf40ba119f764a8d85b138dbf`
+- HEAD summary: chore: reorganize
 - Commits in last 7 days: `1`
 
 ## File counts by extension
