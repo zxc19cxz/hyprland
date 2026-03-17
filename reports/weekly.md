@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-25`
+Generated: `2026-02-26`
 
 ## Git
 
-- HEAD: `aea930c0e522794d06de3a21469a023ffe47eb33`
-- HEAD summary: chore: add logging code style
+- HEAD: `3215082407fc2e79df0e17dcd8d365fbac6495cd`
+- HEAD summary: feat: add error handling
 - Commits in last 7 days: `1`
 
 ## File counts by extension
