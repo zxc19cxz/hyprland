@@ -4,8 +4,8 @@ Generated: `2026-03-03`
 
 ## Git
 
-- HEAD: `363ca00a2c3d00934ce145ff979b9438b11b0884`
-- HEAD summary: fix: fix UI glitch
+- HEAD: `2cd5171632004ea5cd061f8791b79ce152c3ef3f`
+- HEAD summary: fix: fix race condition
 - Commits in last 7 days: `1`
 
 ## File counts by extension
