@@ -4,8 +4,8 @@ Generated: `2026-02-18`
 
 ## Git
 
-- HEAD: `e6335e68ccadcb866bf0f2e70e1c358426884c5b`
-- HEAD summary: feat: add database schema
+- HEAD: `74f35ec83b4165251775c8a83f214b3e4e7e61df`
+- HEAD summary: feat: add API documentation
 - Commits in last 7 days: `1`
 
 ## File counts by extension
