@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-21`
+Generated: `2026-02-22`
 
 ## Git
 
-- HEAD: `03f5c65921672e1531f502fcef9e1303f29033e4`
-- HEAD summary: feat: add form validation
+- HEAD: `d97a70302a661d25fc994c6550084fef11a915b9`
+- HEAD summary: chore: refactor to improve UX
 - Commits in last 7 days: `1`
 
 ## File counts by extension
