@@ -4,8 +4,8 @@ Generated: `2026-02-23`
 
 ## Git
 
-- HEAD: `957d9a2b6e0ca0ad1ba8574a3ee5add1b3a75fd4`
-- HEAD summary: fix: fix performance issue code style
+- HEAD: `074844d0dccefd2159abb1712ff8de58b4e1ed9c`
+- HEAD summary: chore: improve error messages
 - Commits in last 7 days: `1`
 
 ## File counts by extension
