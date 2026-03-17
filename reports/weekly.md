@@ -4,8 +4,8 @@ Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `35da1dfb0bedf44594643057b0bac20d99968f45`
-- HEAD summary: chore: update docs
+- HEAD: `0fb180114f308bd3a8e878f9a11ad642d1124d0e`
+- HEAD summary: chore(reports): update weekly report - run 11 (#3)
 - Commits in last 7 days: `1`
 
 ## File counts by extension
