@@ -4,8 +4,8 @@ Generated: `2026-02-18`
 
 ## Git
 
-- HEAD: `9255808e2c95cb8e76446071c2e02056f5c48895`
-- HEAD summary: feat: add error handling
+- HEAD: `8b1f962164b46356288d46399f551ca787379efa`
+- HEAD summary: fix: fix broken link code style
 - Commits in last 7 days: `1`
 
 ## File counts by extension
