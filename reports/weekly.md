@@ -4,8 +4,8 @@ Generated: `2026-03-03`
 
 ## Git
 
-- HEAD: `2cd5171632004ea5cd061f8791b79ce152c3ef3f`
-- HEAD summary: fix: fix race condition
+- HEAD: `614e5dd9762bcc4e6583e025b2615886a36d2e6e`
+- HEAD summary: fix: fix broken link
 - Commits in last 7 days: `1`
 
 ## File counts by extension
