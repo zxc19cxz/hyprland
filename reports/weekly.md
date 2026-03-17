@@ -4,8 +4,8 @@ Generated: `2026-03-02`
 
 ## Git
 
-- HEAD: `9871ef064c13b6e8c5146a9cf43ccf8b0cbe27cf`
-- HEAD summary: chore: update dependencies
+- HEAD: `43bb52c1ad99c49abaaff9bfff859d06af69f402`
+- HEAD summary: fix: fix race condition
 - Commits in last 7 days: `1`
 
 ## File counts by extension
