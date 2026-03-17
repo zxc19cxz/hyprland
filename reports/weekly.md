@@ -4,8 +4,8 @@ Generated: `2026-02-22`
 
 ## Git
 
-- HEAD: `f937ff1d6d6be589d830190a70aa0c13557ad58c`
-- HEAD summary: feat: add caching layer
+- HEAD: `27ac0d02b1060c3963c54bcc0ccefede32db04f9`
+- HEAD summary: fix: fix build error
 - Commits in last 7 days: `1`
 
 ## File counts by extension
