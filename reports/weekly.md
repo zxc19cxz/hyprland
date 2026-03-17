@@ -4,8 +4,8 @@ Generated: `2026-02-24`
 
 ## Git
 
-- HEAD: `074844d0dccefd2159abb1712ff8de58b4e1ed9c`
-- HEAD summary: chore: improve error messages
+- HEAD: `7d8fc179cb8a3ff35f46650ecec084bc587115a3`
+- HEAD summary: feat: add API endpoints
 - Commits in last 7 days: `1`
 
 ## File counts by extension
