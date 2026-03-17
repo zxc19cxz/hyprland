@@ -4,8 +4,8 @@ Generated: `2026-02-18`
 
 ## Git
 
-- HEAD: `1c19cbcf2031b6e2b0d5debe59db25bfb9329547`
-- HEAD summary: feat: add test coverage
+- HEAD: `46bf9a8e16a94650f5296b09247d3742e9194a16`
+- HEAD summary: chore(reports): update weekly report - run 25 (#17)
 - Commits in last 7 days: `1`
 
 ## File counts by extension
