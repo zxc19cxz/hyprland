@@ -4,8 +4,8 @@ Generated: `2026-02-28`
 
 ## Git
 
-- HEAD: `7a7d5dd44d289a26ebd8d236477c228933032c2d`
-- HEAD summary: fix: fix UI glitch
+- HEAD: `41bdacd3f24fe6f580843b82ff756e009073822a`
+- HEAD summary: feat: add caching layer
 - Commits in last 7 days: `1`
 
 ## File counts by extension
