@@ -4,8 +4,8 @@ Generated: `2026-02-20`
 
 ## Git
 
-- HEAD: `03744d49d5292c2ba9919e0e80dba56cbddca23a`
-- HEAD summary: feat: add API endpoints for better performance
+- HEAD: `99d7356e3058399f2f1600f267d2e51155655c91`
+- HEAD summary: fix: fix test failure
 - Commits in last 7 days: `1`
 
 ## File counts by extension
