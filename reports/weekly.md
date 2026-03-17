@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-16`
+Generated: `2026-03-06`
 
 ## Git
 
-- HEAD: `f4d5e5014a97729f736d85077dbd4234c07489f7`
-- HEAD summary: feat: add error handling
+- HEAD: `eb2c8e8548e373f2b7ce7314f9fa34196f479096`
+- HEAD summary: feat: add form validation
 - Commits in last 7 days: `1`
 
 ## File counts by extension
