@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-02-19`
+Generated: `2026-03-18`
 
 ## Git
 
-- HEAD: `9381b62429645b36dcc666d4ac9b994f75714c95`
-- HEAD summary: feat: add database schema
+- HEAD: `fcba1d91db0e7330d1a214dad6bb274007751e70`
+- HEAD summary: fix: fix performance issue and update related files
 - Commits in last 7 days: `1`
 
 ## File counts by extension
