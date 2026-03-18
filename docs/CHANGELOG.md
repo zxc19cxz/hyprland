@@ -41,3 +41,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-03-03 06:26:58 +08 - feat: add test coverage for better performance
 # 2026-03-03 18:39:28 +08 - fix: fix race condition
 # 2026-03-18 05:41:07 +08 - fix: fix performance issue
+# 2026-03-18 21:20:21 +08 - feat: add database schema for better performance
