@@ -43,3 +43,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-03-18 05:41:07 +08 - fix: fix performance issue
 # 2026-03-18 21:20:21 +08 - feat: add database schema for better performance
 # 2026-03-20 19:23:27 +08 - fix: fix memory leak
+# 2026-03-20 21:06:45 +08 - fix: fix UI glitch for better performance
