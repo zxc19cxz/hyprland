@@ -43,3 +43,4 @@ Format: TIMESTAMP - COMMIT MESSAGE
 2026-03-19 07:33:32 +08 - fix: fix race condition
 2026-03-19 23:57:50 +08 - fix: fix build error
 2026-03-20 21:20:45 +08 - chore: reorganize
+2026-03-21 01:00:27 +08 - feat: add responsive design
