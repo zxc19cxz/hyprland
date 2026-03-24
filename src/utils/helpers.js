@@ -66,3 +66,4 @@ module.exports = {
 // 2026-03-20 20:18:27 +08 - feat: add database schema
 // 2026-03-21 01:41:07 +08 - chore: refactor
 // 2026-03-21 21:47:05 +08 - chore: update docs
+// 2026-03-24 18:02:15 +08 - feat: add API documentation
