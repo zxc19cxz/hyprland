@@ -47,3 +47,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-03-21 17:35:49 +08 - fix: fix security vulnerability naming convention
 # 2026-03-24 19:47:28 +08 - feat: add error handling
 # 2026-03-24 20:24:28 +08 - feat: add UI components
+# 2026-03-25 03:35:37 +08 - fix: fix broken link
