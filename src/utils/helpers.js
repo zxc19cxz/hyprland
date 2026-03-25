@@ -69,3 +69,4 @@ module.exports = {
 // 2026-03-24 18:02:15 +08 - feat: add API documentation
 // 2026-03-24 21:19:23 +08 - chore: update dependencies to improve UX
 // 2026-03-24 23:13:32 +08 - fix: fix test failure
+// 2026-03-25 11:20:52 +08 - fix: fix typo
