@@ -1,11 +1,11 @@
 # Weekly repo report
 
-Generated: `2026-03-21`
+Generated: `2026-03-26`
 
 ## Git
 
-- HEAD: `e63f517cbf79e3859ec1ad8202e4d0c515e39213`
-- HEAD summary: fix: fix security vulnerability naming convention
+- HEAD: `d1fdfe91e753062f9e34e3ff13decfe40241e7cb`
+- HEAD summary: chore: clean up naming convention and update related files
 - Commits in last 7 days: `1`
 
 ## File counts by extension
