@@ -73,3 +73,4 @@ module.exports = {
 // 2026-03-25 21:18:31 +08 - chore: optimize
 // 2026-03-25 21:35:31 +08 - fix: fix bug
 // 2026-03-27 10:40:53 +08 - feat: add error handling
+// 2026-03-27 22:11:07 +08 - fix: fix performance issue
