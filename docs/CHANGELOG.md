@@ -54,3 +54,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # 2026-03-26 21:52:26 +08 - chore: improve error messages
 # 2026-03-27 03:12:07 +08 - feat: add UI components code style
 # 2026-03-27 11:08:53 +08 - feat: add user authentication code style
+# 2026-03-28 01:00:56 +08 - fix: fix UI glitch code style
