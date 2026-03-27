@@ -45,3 +45,4 @@ timestamp,type,message
 2026-03-25 19:51:33 +08,fix,fix bug
 2026-03-26 19:52:37 +08,chore,improve tests
 2026-03-27 03:43:07 +08,fix,fix bug
+2026-03-27 18:40:40 +08,chore,improve error messages
