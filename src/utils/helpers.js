@@ -76,3 +76,4 @@ module.exports = {
 // 2026-03-27 22:11:07 +08 - fix: fix performance issue
 // 2026-03-28 02:59:59 +08 - feat: add API documentation
 // 2026-03-28 03:46:39 +08 - feat: add responsive design code style
+// 2026-03-28 14:00:26 +08 - fix: fix memory leak
